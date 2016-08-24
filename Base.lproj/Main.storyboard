@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IsItPrime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ds-rd-pcL">
+                                <rect key="frame" x="221" y="40" width="159" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="Fc6-yw-igW"/>
+                                    <constraint firstAttribute="height" constant="70" id="weE-N3-3OC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a number in the box" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTj-QW-qlY">
+                                <rect key="frame" x="157" y="138" width="286" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="T0u-KA-EhR"/>
+                                    <constraint firstAttribute="width" constant="286" id="sOi-p4-PSE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebt-9I-Kvb">
+                                <rect key="frame" x="240" y="285" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LIu-im-S2L"/>
+                                    <constraint firstAttribute="width" constant="120" id="keO-va-5yQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="Is It Prime?"/>
+                                <connections>
+                                    <action selector="isItPrimeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQ1-QO-ADG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0d-rL-wVX">
+                                <rect key="frame" x="84" y="346" width="432" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="8tE-QI-qxs"/>
+                                    <constraint firstAttribute="width" constant="432" id="PTy-qu-8x7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. 17" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VsA-wQ-vT8">
+                                <rect key="frame" x="252" y="224" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="3Gi-LN-EGH"/>
+                                    <constraint firstAttribute="height" constant="30" id="rGd-QB-K5E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0ds-rd-pcL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2rL-Uh-Wpl"/>
+                            <constraint firstItem="VsA-wQ-vT8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Xm-lq-hbK"/>
+                            <constraint firstItem="ebt-9I-Kvb" firstAttribute="centerX" secondItem="VsA-wQ-vT8" secondAttribute="centerX" id="Gtr-R2-ThT"/>
+                            <constraint firstItem="ebt-9I-Kvb" firstAttribute="top" secondItem="VsA-wQ-vT8" secondAttribute="bottom" constant="31" id="IgQ-d5-MtC"/>
+                            <constraint firstItem="K0d-rL-wVX" firstAttribute="top" secondItem="ebt-9I-Kvb" secondAttribute="bottom" constant="31" id="Mf3-ZO-ZIY"/>
+                            <constraint firstItem="YTj-QW-qlY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ruw-Bm-hjE"/>
+                            <constraint firstItem="K0d-rL-wVX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aVb-ug-1JI"/>
+                            <constraint firstItem="YTj-QW-qlY" firstAttribute="top" secondItem="0ds-rd-pcL" secondAttribute="bottom" constant="28" id="evY-dK-p26"/>
+                            <constraint firstItem="0ds-rd-pcL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="g3I-qB-14T"/>
+                            <constraint firstItem="VsA-wQ-vT8" firstAttribute="top" secondItem="YTj-QW-qlY" secondAttribute="bottom" constant="38" id="prS-WE-uJt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="VsA-wQ-vT8" id="7db-0T-mDC"/>
+                        <outlet property="resultsLabel" destination="K0d-rL-wVX" id="8Go-DE-WLD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="297"/>
+        </scene>
+    </scenes>
+</document>
